@@ -1,163 +1,148 @@
-body{
-    display: inline-block;
+/* Global Styles */
+body {
+    display: block; /* Changed from inline-block to avoid layout issues */
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
+/* Profile Box */
 .box {
     display: inline-block;
     height: 850px;
     width: 280px;
-    margin: 15px ;
+    margin: 15px;
     background-color: rgb(247, 242, 242);
+}
 
+.box > h2,
+.box > h3,
+.box > p {
+    display: inline-block;
+    margin: 0;
 }
-div.box > h2,h3,p{
-    display:inline-block;
-margin:0px;
-}
-div.box h2{
+
+.box h2 {
     font-family: 'Times New Roman', Times, serif;
 }
 
-div.box +
-     h2{
-    margin:12px;}
-    
+/* This selector was likely incorrect and unnecessary */
+.box + h2 {
+    margin: 12px;
+}
 
-
+/* Profile Picture */
 #profilepic {
     height: 200px;
     width: 170px;
     clip-path: circle(85px);
-    margin-top: 25px;
-    margin-bottom: 10px;
-    margin-left: 50px;
-    
-    
+    margin: 25px 0 10px 50px;
 }
 
-
-.box2{
-    display:block;
-    margin-top: 20px;
-
-}
-.box2 h2{
-    margin-bottom:5px;
+/* Box2: Info Section */
+.box2 {
     display: block;
-
+    margin-top: 20px;
 }
+
+.box2 h2 {
+    margin-bottom: 5px;
+    display: block;
+}
+
 .box2 p {
     background-color: rgb(207, 207, 207);
-    border-color:black;
+    border: 1px solid black;
     border-radius: 2px;
-    margin:3px;
+    margin: 3px;
     padding: 2px;
-
 }
- .text {
+
+.text {
     font-style: italic;
-    background-color: none;
-
+    background-color: transparent; /* Fixed invalid value */
 }
 
-
-
-.box3{
+/* Box3: Main Content */
+.box3 {
     height: 800px;
-    width:70%;
-  position: absolute;
-  display:inline-block;
-  margin-top: 20px;
-
-
-
+    width: 70%;
+    position: absolute;
+    display: inline-block;
+    margin-top: 20px;
 }
 
-.box4{
-    display:block;
-    height :200px;
-    
-    
+/* Box4: Header Section */
+.box4 {
+    display: block;
+    height: 200px;
 }
 
-
-#title
-{display:block;
-margin-top: 10px;
-margin-bottom: 1px;
-color: black;
-
+#title {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    color: black;
 }
 
-.box4 h2{
+.box4 h2 {
     color: brown;
-    margin-top: 0px;
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
 }
 
-
-
-email:activ
-    
-
-.box4 > hr{
+.box4 > hr {
     margin-top: 15px;
     margin-bottom: 5px;
 }
 
-.email  {
+/* Email & Contact */
+.email {
     display: inline-block;
     margin-top: 10px;
     margin-left: 300px;
-    
-    background-color:rgb(255, 200, 200) ;
-    
-}
-.contact {
-    background-color:rgb(255, 200, 200);
-    margin-left: 10px;
-    
+    background-color: rgb(255, 200, 200);
 }
 
+.contact {
+    background-color: rgb(255, 200, 200);
+    margin-left: 10px;
+}
+
+/* Divider */
 .dotted-line {
-    
-    border-top: 3px dotted;
-    
-            
+    border-top: 3px dotted black;
     margin: 20px 0;
 }
-    
 
-
-.box5{
-    height:620px;
+/* Box5: Experience or Other Section */
+.box5 {
+    height: 620px;
 }
-.box5 h3{
+
+.box5 h3 {
     display: block;
     margin-top: 20px;
 }
 
-.E1{
+/* Section E1 (image + heading) */
+.E1 {
     height: 400px;
 }
 
-.E1 img{
-height: 80px;
-
-margin-left: 0px;
+.E1 img {
+    height: 80px;
+    margin-left: 0;
 }
 
-.E2  {
-    padding: 12px ;
-}
-
-
-.E2 >img{
-    float: left;
-    
-}
-
-.E1 h4{
+.E1 h4 {
     display: inline;
-    margin-top: 0px;
+    margin-top: 0;
+}
+
+/* Section E2 (image and description) */
+.E2 {
+    padding: 12px;
+}
+
+.E2 > img {
+    float: left;
 }
